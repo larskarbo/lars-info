@@ -32,6 +32,12 @@ const larses = [
     linkedin: "https://www.linkedin.com/in/lars-traaholt-v%C3%A5gnes-432725130/"
   },
   {
+    name: "Lars Morstad",
+    description: "Studying Informatics at the University of Edinburgh and a paragon of all things nerdy! Organizing Hack the Burgh 2021!",
+    image: "/morstad.png",
+    linkedin: "https://www.linkedin.com/in/lars-thalian-m-6153b0133",
+  },
+  {
     name: "Lars Sandal",
     description: "This norwegian Lars is a 17 year old currently in high school. Doesn't have a more interesting bio yet. Let's give him some years.",
     image: "/sandal.jpeg",
