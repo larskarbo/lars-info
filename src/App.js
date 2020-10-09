@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 
 import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiLink } from "react-icons/ti"
+import { SiTwitch } from "react-icons/si"
 
 const larses = [
   {
@@ -29,6 +30,17 @@ const larses = [
     description: "This Lars is a beast at machine learning and AI. Working as a consultant and has some crazy side projects coming soon.",
     image: "/vaagnes.jpg",
     linkedin: "https://www.linkedin.com/in/lars-traaholt-v%C3%A5gnes-432725130/"
+  },
+  {
+    name: "Lars Sandal",
+    description: "This norwegian Lars is a 17 year old currently in high school. Doesn't have a more interesting bio yet. Let's give him some years.",
+    image: "/sandal.jpeg",
+  },
+  {
+    name: "Lars Even Beite",
+    description: "This norwegian Lars is a full time Twitch streamer. That's pretty cool.",
+    twitch: "https://www.twitch.tv/kapitanostv",
+    image: "/beite.png",
   }
 ]
 
@@ -58,7 +70,12 @@ function App() {
         }}>
           helping you find the best Larses on the planet
       </div>
-        <form action="mailto:mail@larskarbo.no">
+        <form onSubmit={() => {
+          var res = window.confirm("Include bio, photo and eventual social links (linkedin, twitter etc...).\n\nIf you are not them, please ask them first!")
+          if(res){
+            window.location.href = "mailto:mail@larskarbo.no";
+          }
+        }}>
           <button style={{ marginTop: 20 }}>Submit new Lars +</button>
         </form>
         <div className="larses">
@@ -70,33 +87,35 @@ function App() {
                 paddingBottom: 10,
                 paddingTop: 5,
 
-              }}>{lars.name}
+              }}>
+                <div style={{
+                  paddingRight: 5
+                }}>
+                  {lars.name}
+                </div>
                 {lars.linkedin &&
-                  <a href={lars.linkedin} style={{
-                    color: "black",
-                    paddingLeft: 5,
-                    verticalAlign: "middle"
-                  }}>
+                  <Link href={lars.linkedin}>
                     <TiSocialLinkedinCircular />
-                  </a>
+                  </Link>
                 }
                 {lars.twitter &&
-                  <a href={lars.twitter} style={{
-                    color: "black",
-                    verticalAlign: "middle"
-                  }}>
+                  <Link href={lars.twitter}>
                     <TiSocialTwitterCircular />
-                  </a>
+                  </Link>
                 }
                 {lars.website &&
 
-                  <a href={lars.website} style={{
-                    color: "black",
-                    verticalAlign: "middle"
-                  }}>
+                  <Link href={lars.website}>
                     <TiLink />
-                  </a>
+                  </Link>
                 }
+
+{lars.twitch &&
+
+<Link href={lars.website}>
+  <SiTwitch />
+</Link>
+}
               </div>
               <div>{lars.description}</div>
             </div>
@@ -107,6 +126,16 @@ function App() {
   );
 }
 
+const Link = ({href, children}) => {
+  return (
+    <a href={href} style={{
+      color: "black",
+      verticalAlign: "middle"
+    }}>
+      {children}
+    </a>
+  )
 
+}
 
 export default App;
