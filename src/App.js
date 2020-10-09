@@ -100,7 +100,7 @@ function App() {
                   <div>Error. Please try again later.</div>
                 }
                 {success &&
-                  <div>Thank you for subscribing!</div>
+                  <div>Thank you for submitting. Will get back to you shortly! If you don't hear anything, ping me (@larskarbo) somewhere.</div>
                 }
                 {!loading && !success &&
                   <div style={{
