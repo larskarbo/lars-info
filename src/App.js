@@ -17,7 +17,7 @@ const larses = [
   {
     name: "Lars Willner",
     linkedin: "https://www.linkedin.com/in/larswillner/?originalSubdomain=no",
-    description: "CEO of Differ - a chatbot to help people feel less lonely. He is swedish but emigrated to the better neighbour.",
+    description: "Working with a social chatbot solution (Differ) to help students build meaningful relationships. Happy Swede that emigrated to Norway",
     image: "/willner.jpeg"
   },
   {
