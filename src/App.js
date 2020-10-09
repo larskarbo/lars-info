@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 
-import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiLink } from "react-icons/ti"
+import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiLink, TiSocialGithubCircular } from "react-icons/ti"
 import { SiTwitch } from "react-icons/si"
 
 const larses = [
@@ -38,10 +38,16 @@ const larses = [
     linkedin: "https://www.linkedin.com/in/lars-thalian-m-6153b0133",
   },
   {
-    name: "Lars Sandal",
-    description: "This norwegian Lars is a 17 year old currently in high school. Doesn't have a more interesting bio yet. Let's give him some years.",
-    image: "/sandal.jpeg",
+    name: "Lars Werne",
+    description: "Probably the biggest Pure Maths enthusiast who ever decided to study Informatics instead. In Germany we say “1 Ehrenmann”.",
+    github: "https://github.com/larswe",
+    image: "/werne.jpg",
   },
+  // {
+  //   name: "Lars Sandal",
+  //   description: "This norwegian Lars is a 17 year old currently in high school. Doesn't have a more interesting bio yet. Let's give him some years.",
+  //   image: "/sandal.jpeg",
+  // },
   {
     name: "Lars Even Beite",
     description: "This norwegian Lars is a full time Twitch streamer. That's pretty cool.",
@@ -95,7 +101,8 @@ function App() {
 
               }}>
                 <div style={{
-                  paddingRight: 5
+                  paddingRight: 5,
+                  display: "inline"
                 }}>
                   {lars.name}
                 </div>
@@ -120,6 +127,12 @@ function App() {
 
 <Link href={lars.website}>
   <SiTwitch />
+</Link>
+}
+{lars.github &&
+
+<Link href={lars.github}>
+  <TiSocialGithubCircular />
 </Link>
 }
               </div>
