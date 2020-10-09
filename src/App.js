@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 
 import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiLink, TiSocialGithubCircular } from "react-icons/ti"
 import { SiTwitch } from "react-icons/si"
+import NetlifyForm from "react-netlify-form"
 
 const larses = [
   {
@@ -57,6 +58,7 @@ const larses = [
 ]
 
 function App() {
+  const [showForm, setShowForm] = useState(false)
   return (
     <div className="Outer">
       <div className="App">
@@ -82,14 +84,54 @@ function App() {
         }}>
           helping you find the best Larses on the planet
       </div>
-        <form onSubmit={() => {
-          var res = window.confirm("Include bio, photo and eventual social links (linkedin, twitter etc...).\n\nIf you are not them, please ask them first!")
-          if(res){
-            window.location.href = "mailto:mail@larskarbo.no";
-          }
-        }}>
-          <button style={{ marginTop: 20 }}>Submit new Lars +</button>
-        </form>
+        <div>
+          <button onClick={() => {
+            setShowForm(true)
+          }} style={{ marginTop: 20 }}>Submit yourself +</button>
+        </div>
+        {showForm &&
+          <NetlifyForm name='newlars'>
+            {({ loading, error, success }) => (
+              <div>
+                {loading &&
+                  <div>Loading...</div>
+                }
+                {error &&
+                  <div>Error. Please try again later.</div>
+                }
+                {success &&
+                  <div>Thank you for subscribing!</div>
+                }
+                {!loading && !success &&
+                  <div style={{
+                    display: "block"
+                  }}>
+                    <p>Hi Lars, submit yourself here:</p>
+                    <p>
+                      <input required type="text" name="name" placeholder="your name. (Lars + last name)" />
+                    </p>
+                    <p>
+                      <input required type="email" name="email" placeholder="email" />
+                    </p>
+                    <p>
+                      <textarea required name="bio" placeholder="bio. must be interesting!"></textarea>
+                    </p>
+                    <p>
+                      Profile picture: <input required type="file" name="picture" />
+                    </p>
+                    <p>
+                      <input type="text" name="links" placeholder="optional: linkedin, twitter, etc link" />
+                    </p>
+                    <p>
+                      <button type="submit">Send application</button>
+                    </p>
+                  </div>
+                }
+              </div>
+            )}
+          </NetlifyForm>
+        }
+
         <div className="larses">
           {larses.map(lars => (
             <div className="Lars">
@@ -123,18 +165,18 @@ function App() {
                   </Link>
                 }
 
-{lars.twitch &&
+                {lars.twitch &&
 
-<Link href={lars.website}>
-  <SiTwitch />
-</Link>
-}
-{lars.github &&
+                  <Link href={lars.website}>
+                    <SiTwitch />
+                  </Link>
+                }
+                {lars.github &&
 
-<Link href={lars.github}>
-  <TiSocialGithubCircular />
-</Link>
-}
+                  <Link href={lars.github}>
+                    <TiSocialGithubCircular />
+                  </Link>
+                }
               </div>
               <div>{lars.description}</div>
             </div>
@@ -145,7 +187,7 @@ function App() {
   );
 }
 
-const Link = ({href, children}) => {
+const Link = ({ href, children }) => {
   return (
     <a href={href} style={{
       color: "black",

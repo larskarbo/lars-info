@@ -28,3 +28,12 @@
   }
   
 }
+
+form {
+  width: 100%;
+
+  input, textarea {
+    width: 100%;
+    max-width: 300px
+  }
+}
