@@ -10,71 +10,10 @@ import {
   TiLink,
   TiSocialGithubCircular,
 } from "react-icons/ti";
-import { SiTwitch , SiTiktok} from "react-icons/si";
+import { SiTwitch, SiTiktok } from "react-icons/si";
 import NetlifyForm from "react-netlify-form";
+import larses from "./larses";
 
-const larses = [
-  {
-    name: "Lars Karbø",
-    description:
-      "Working with neural interfaces at Drowzee and posting from his indie hacking journey on TikTok.",
-    linkedin: "https://www.linkedin.com/in/larskarbo/",
-    website: "https://larskarbo.no/",
-    twitter: "https://twitter.com/larskarbo",
-    instagram: "https://instagram.com/larskarbo",
-    tiktok: "https://tiktok.com/@larskarbo",
-    image:
-      "https://s.gravatar.com/avatar/4579b299730ddc53e3d523ec1cd5482a?s=160",
-  },
-  {
-    name: "Lars Otto Johnsen",
-    linkedin: "https://www.linkedin.com/in/lars-otto-johnsen-42b685172/",
-    description:
-      "Founder of LODDO - a digital marketing agency. Hustler to the bone, and good at selling things online.",
-    image: "/johnsen.jpeg",
-  },
-  {
-    name: "Lars Willner",
-    linkedin: "https://www.linkedin.com/in/larswillner/?originalSubdomain=no",
-    description:
-      "Working with a social chatbot solution (Differ) to help students build meaningful relationships. Happy Swede that emigrated to Norway",
-    image: "/willner.jpeg",
-  },
-  {
-    name: "Lars Traaholt Vågnes",
-    description:
-      "This Lars is a beast at machine learning and AI. Working as a consultant and has some crazy side projects coming soon.",
-    image: "/vaagnes.jpg",
-    linkedin:
-      "https://www.linkedin.com/in/lars-traaholt-v%C3%A5gnes-432725130/",
-  },
-  {
-    name: "Lars Morstad",
-    description:
-      "Studying Informatics at the University of Edinburgh and a paragon of all things nerdy! Organizing Hack the Burgh 2021!",
-    image: "/morstad.png",
-    linkedin: "https://www.linkedin.com/in/lars-thalian-m-6153b0133",
-  },
-  {
-    name: "Lars Werne",
-    description:
-      "Probably the biggest Pure Maths enthusiast who ever decided to study Informatics instead. In Germany we say “1 Ehrenmann”.",
-    github: "https://github.com/larswe",
-    image: "/werne.jpg",
-  },
-  // {
-  //   name: "Lars Sandal",
-  //   description: "This norwegian Lars is a 17 year old currently in high school. Doesn't have a more interesting bio yet. Let's give him some years.",
-  //   image: "/sandal.jpeg",
-  // },
-  {
-    name: "Lars Even Beite",
-    description:
-      "This norwegian Lars is a full time Twitch streamer. That's pretty cool.",
-    twitch: "https://www.twitch.tv/kapitanostv",
-    image: "/beite.png",
-  },
-];
 
 function App() {
   const [showForm, setShowForm] = useState(false);
@@ -114,29 +53,29 @@ function App() {
             marginTop: -40,
           }}
         >
-          helping you find the best Larses on the planet
+          helping you find the best Larses ({larses.length}) on the planet
         </div>
         <div>
-        <div
-          style={{
-            // fontSize: 12,
-            border: "2px solid #100700",
-            display: 'inline-block',
-            margin: 30,
-            padding: 10
-          }}
-        >
-          <div>For more goodness follow me:</div>
-          <LinkSide icon={<TiSocialInstagram />} href={larses[0].instagram}>
-            Instagram (larskarbo)
+          <div
+            style={{
+              // fontSize: 12,
+              border: "2px solid #100700",
+              display: 'inline-block',
+              margin: 30,
+              padding: 10
+            }}
+          >
+            <div>For more goodness follow me:</div>
+            <LinkSide icon={<TiSocialInstagram />} href={larses[0].instagram}>
+              Instagram (larskarbo)
           </LinkSide>
-          <LinkSide icon={<TiSocialTwitter />} href={larses[0].twitter}>
-            Twitter (larskarbo)
+            <LinkSide icon={<TiSocialTwitter />} href={larses[0].twitter}>
+              Twitter (larskarbo)
           </LinkSide>
-          {/* <LinkSide icon={<SiTiktok />} href={larses[0].tiktok}>
+            {/* <LinkSide icon={<SiTiktok />} href={larses[0].tiktok}>
             TikTok (larskarbo)
           </LinkSide> */}
-        </div>
+          </div>
         </div>
         <div>
           <button
@@ -214,59 +153,76 @@ function App() {
         )}
 
         <div className="larses">
-          {larses.map((lars) => (
-            <div className="Lars">
-              <img className="Image" src={lars.image} />
-              <div
-                style={{
-                  fontWeight: 700,
-                  paddingBottom: 10,
-                  paddingTop: 5,
-                }}
-              >
-                <div
-                  style={{
-                    paddingRight: 5,
-                    display: "inline",
-                  }}
-                >
-                  {lars.name}
-                </div>
-                {lars.linkedin && (
-                  <Link href={lars.linkedin}>
-                    <TiSocialLinkedinCircular />
-                  </Link>
-                )}
-                {lars.twitter && (
-                  <Link href={lars.twitter}>
-                    <TiSocialTwitterCircular />
-                  </Link>
-                )}
-                {lars.website && (
-                  <Link href={lars.website}>
-                    <TiLink />
-                  </Link>
-                )}
-
-                {lars.twitch && (
-                  <Link href={lars.website}>
-                    <SiTwitch />
-                  </Link>
-                )}
-                {lars.github && (
-                  <Link href={lars.github}>
-                    <TiSocialGithubCircular />
-                  </Link>
-                )}
-              </div>
-              <div>{lars.description}</div>
-            </div>
+          {larses.filter(lars => !lars.bad).map((lars) => (
+            <Lars lars={lars} />
+          ))}
+        </div>
+        <div className="larses" style={{
+          paddingTop:250
+        }}>
+          Bad larses: (need better bios/pictures)
+          {larses.filter(lars => lars.bad).map((lars) => (
+            <Lars lars={lars} />
           ))}
         </div>
       </div>
     </div>
   );
 }
+
+const Lars = ({ lars }) => (
+  <div className="Lars">
+    <div className="Image" >
+      <img className="Image" src={lars.image} />
+
+    </div>
+    <div
+      style={{
+        fontWeight: 700,
+        paddingBottom: 10,
+        paddingTop: 5,
+      }}
+    >
+      <div
+        style={{
+          paddingRight: 5,
+          display: "inline",
+        }}
+      >
+        {lars.name}
+      </div>
+      {lars.linkedin && (
+        <Link href={lars.linkedin}>
+          <TiSocialLinkedinCircular />
+        </Link>
+      )}
+      {lars.twitter && (
+        <Link href={lars.twitter}>
+          <TiSocialTwitterCircular />
+        </Link>
+      )}
+      {lars.website && (
+        <Link href={lars.website}>
+          <TiLink />
+        </Link>
+      )}
+
+      {lars.twitch && (
+        <Link href={lars.website}>
+          <SiTwitch />
+        </Link>
+      )}
+      {lars.github && (
+        <Link href={lars.github}>
+          <TiSocialGithubCircular />
+        </Link>
+      )}
+    </div>
+    <div>{lars.description}</div>
+  </div>
+
+)
+
 
 const Link = ({ href, children }) => {
   return (
@@ -286,23 +242,23 @@ const Link = ({ href, children }) => {
 const LinkSide = ({ href, children, icon }) => {
   return (
     <div>
-    <a
-      href={href}
-      style={{
-        color: "black",
-        fontSize: 20
-      }}
-    >
-      <span
-      style={{
-        verticalAlign: "middle",
-        // fontSize: 20
-      }}>
-      {icon}
+      <a
+        href={href}
+        style={{
+          color: "black",
+          fontSize: 20
+        }}
+      >
+        <span
+          style={{
+            verticalAlign: "middle",
+            // fontSize: 20
+          }}>
+          {icon}
 
-      </span>
-      {children}
-    </a></div>
+        </span>
+        {children}
+      </a></div>
   );
 };
 
