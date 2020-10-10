@@ -145,7 +145,7 @@ export default [
     image:
       "/scr/34bf7d04-0ab3-42d2-b5fb-d49ef73b6c32D84B34B4-1F8F-46A3-BA93-B2F92C5BE3E2.jpeg",
   },
-  
+
   {
     name: "Lars Salomonsen",
     email: "andreas.gravdal@hotmail.no",
@@ -248,7 +248,7 @@ export default [
     instagram: "https://instagram.com/larshatlevik",
     image:
       "/scr/145c243f-6ae4-4fb5-82b3-33f08dd3f8d240ABC77C-2F0B-4523-9B95-C461AB30540D.jpeg",
-      bad: true
+    bad: true,
   },
   {
     name: "Lars Moe Billington",
@@ -318,5 +318,239 @@ export default [
     image:
       "/scr/b93465c7-7792-4f8d-b793-dc054f55646533DD160F-3F97-4AD8-8F35-6DBE13E3F0D8.jpeg",
     bad: true,
+  },
+  {
+    name: "Lars Dalaker",
+    email: "larsdalaker@gmail.com",
+    description:
+      "Fearlessly tackling his coffee flavored ice cream addiction while pursuing his masters degree in pure mathematics. Proud winner of the bronze medal in the Kaupanger Mario Kart 64 tournament of 2016.",
+    image:
+      "/scr/a2f0b6d7-7b25-48e9-98a1-859548217c2dA62DBBE7-5FC2-43A2-A674-7F07A0E19DCF.jpeg",
+  },
+  {
+    name: "Lars Pascal Grimm",
+    email: "larspg101@gmail.com",
+    description:
+      "Hey. My name is Lars. I know right, didn’t expect that. I live in Norway and like to lift heavy objects from the ground, so I can become even stronger than last time. My goal in life is to become the most Lars of all the Lars’es. I will make you cry btw.",
+    instagram: "https://instagram.com/larspascalgrimm",
+    image:
+      "/scr/e5bb73b0-83e6-4147-a060-3c5f633c4069F1F74419-85B5-4EE6-A527-4CE0A586031F.jpeg",
+  },
+  {
+    name: "Lars Blix",
+    email: "blixlars@gmail.com",
+    description:
+      "From Norway, and still in middle school, practices cross country skiing. Has lived in Brazil for about four years. Really into snow sports",
+    image:
+      "/scr/c7a16a0a-b652-41e0-a035-19031061b29e5DF0EC58-6804-434A-AF73-4997AF95610C.jpeg",
+  },
+  {
+    name: "Lars Rønsåsbjørg",
+    email: "larsiboy@hotmail.com",
+    description:
+      "I like to hunt and kill animals. My favourite type of girls are my pupils😍",
+    image:
+      "/scr/e257d5db-11a8-4b8c-9043-9338e10a65b52337115F-8AFA-40C8-B681-92CD3875C0C8.jpeg",
+  },
+  {
+    name: "Lars Holmen Moldskred",
+    email: "lars.holmen.moldskred@gmail.com",
+    description: "Dysleksien hans får han til å skrive laxs isteden for Lars",
+    image:
+      "/scr/46c6a4d9-c204-4bd8-9548-06ddfa99d18116023465804955142724093478327884.jpg",
+  },
+  {
+    name: "Lars Erik Grønningen",
+    email: "larstheman@gmail.com",
+    description:
+      "I work retail, because shops are where the hoes spends their time",
+    image:
+      "/scr/df60fb7b-d649-4ba1-bee1-c942b3c8b83fEA0E2083-370F-4A06-91CB-A38A2C7F85A0.png",
+  },
+  {
+    name: "Lars Hercules",
+    email: "rakelheleneb@gmail.com",
+    description: "Very handsome and strong",
+    image:
+      "/scr/fced0b97-c70c-479f-a83e-8eb1615a9d8fE5F305B8-1AAB-4C8F-AB8C-66257052FDB1.jpeg",
+  },
+  {
+    name: "Lars Haustveit",
+    email: "haustveit.lars@gmail.com",
+    description: "I am the cool Lars😎",
+    image:
+      "/scr/7c5f5fef-2b64-4fe2-9563-0d4ee949879c276AB0E7-22EF-4618-8B5D-75CBFE988419.jpeg",
+  },
+  {
+    name: "Lars Endrerud",
+    email: "lars.1d@online.no",
+    description: "Norsk musiker",
+    image:
+      "/scr/8b2138ca-eef3-45cd-abc5-2f46189121b33CB86DE1-1733-4F70-8E6C-2DB5E35F4E2C.jpeg",
+  },
+  {
+    name: "Lars Taco",
+    email: "Lars12@gmail.com",
+    description:
+      "Norwegian Lars that loves to enjoy a taco with corn on a Friday, Saturday or any other day og the week. He is the undefeated taco king!",
+    image:
+      "/scr/d0294f06-000a-4b74-97c4-04e130a91d7460A6CBD2-DB7D-4D84-98E9-DD642D2A1C0B.jpeg",
+  },
+  {
+    name: "Taco Lars",
+    email: "lars@gmail.com",
+    description: "Best på Taco.",
+    image:
+      "/scr/770192d8-326a-4379-baec-9e37322d233f8C9B90B6-C4A8-473D-8022-D00602FC7945.png",
+  },
+  {
+    name: "Larris lars",
+    email: "thommasolai@gmail.com",
+    description: "He lives in norway and loves to have fun in the wods",
+    image:
+      "/scr/1219f5c0-d30f-4c8f-ad90-e3013a4ec10dD42CE9C6-A851-464C-B68D-4391DEC2437A.png",
+  },
+  {
+    name: "Lars Martinius Skogheim Endrerud",
+    email: "liv.swang@gmail.com",
+    description:
+      "love to use my metal detector and make pizza, maybe some guitar,, who knows",
+    instagram: "https://instagram.com/bxya__",
+    image:
+      "/scr/0e395cd7-5f2c-488f-8826-0817b9831dd0619EC96B-0AB8-44CE-B2BC-56B9B1FEA9C5.jpeg",
+  },
+  {
+    name: "Lars Husby Berger",
+    email: "melkebarten.larsberger@gmail.com",
+    description: "Lilla Linda Lompe Lars. 12 år gammel",
+    instagram: "https://www.instagram.com/lillelars__",
+    image:
+      "/scr/b86a78e2-0e54-4362-8581-4168c9a7ebb4121012412_690064291632184_5427822606222738291_o.jpg",
+  },
+  {
+    name: "Lars Tran",
+    email: "mathiaschristensen38@gmail.com",
+    description: "This is a Danish Lars, he likes to sleep.",
+    image:
+      "/scr/a964f9f9-c362-489a-ba06-aab85c881e44inbound8106131962704720655.webp",
+  },
+  {
+    name: "Lars Arne Lesund",
+    email: "larsarnelesund@gmail.com",
+    description:
+      "Livsnyter som elsker pene damer. Utdannet tømrer men skal bli aksjeinvestor isteden. Hobbyer er fotball, musikk og damer",
+    image:
+      "/scr/7f5698a2-5a32-4caf-936b-e23e1edf157a2ABE1346-85EB-4F69-BC62-2FEDC6C6C0D6.jpeg",
+  },
+  {
+    name: "Lars Panser Einarsen",
+    email: "reallarspanser@gmail.com",
+    description:
+      "Hi my name is lars i am a big panser. My best friend i Morten, he is a sammalt grandis. I simp to girls on saturdays, and am a part of Tycoon 2021, the only group in norway.",
+    instagram: "https://www.instagram.com/lars_einarsen/",
+    image: "/scr/6fd0bb90-0afe-4910-83c0-b356739c90e7Screenshot_1.png",
+  },
+  {
+    name: "Lars koh",
+    email: "nilsen.tobias@hotmail.com",
+    description:
+      "Lars is an asian Korean that lives in Norway and is studying to become a bartender",
+    image: "/scr/4f2b6856-37b3-4b17-a7df-c790f4259ed8Snapchat-456809955.jpg",
+  },
+  {
+    name: "Lars-Martin Hammer",
+    email: "lars.martin.hammer@gmail.com",
+    instagram: "https://www.instagram.com/larsmartinhammer/",
+    description:
+      "This Lars is sometimes called Lasse. He is from Sarpsborg, the greatest city in all of Norway. He's on track to become a psychologist, and enjoys a good Gin & Tonic. The trick is to use lime as fruit, and Schweppes with lemon for that sweet combined citrus taste. Also, blueberries for that subtle keeg taste.",
+    image:
+      "/scr/05d10f36-0356-4b50-a070-673f6e6e5ca6121185860_379607296747642_3953898379192639056_n.jpg",
+  },
+  {
+    name: "Lars agnor Gundersen",
+    email: "lars.agnor@hotmail.com",
+    description:
+      "Tidligere strongman og power lifter. Profesjonell løgnhals utdannet i salgsfaget",
+    image:
+      "/scr/c84f0dc4-416a-4369-9476-84f7192242d8FFEFF336-4F7C-49DF-BCC2-A35CDC357566.jpeg",
+  },
+  {
+    name: "Lars Christian Haugen",
+    instagram: "https://www.instagram.com/haugen125/",
+    email: "kristine.troaa@icloud.com",
+    description:
+      "I like beer and «stjernegris». But i wish i have a girlfriend| Instagram: haugen125",
+    image:
+      "/scr/a36720c2-bea5-4f18-827b-cf946433809bC17B8DDB-1B75-4879-8261-178C2216884D.jpeg",
+  },
+  {
+    name: "Lars Riste",
+    email: "larshriste@gmail.com",
+    description:
+      "Lars Riste, also Lars Sellevoll if you want:) born 2004 lives in Valdres, aka a boring hole. Work part time on a gas station, and yes. Im rich from it",
+    image:
+      "/scr/71c4d673-ba35-492f-84d2-8c8e60b7f003C8133BA8-93A7-40BA-973F-A812A5D4E1EA.jpeg",
+  },
+  {
+    name: "Lars Kristian steinsvik",
+    email: "miakristin@gmail.com",
+    description: "Idk",
+    bad: true,
+    image:
+      "/scr/d54a868d-e301-4f74-8478-cc8f3cde7b10646E2D03-3769-4776-AA0C-713493791E3F.jpeg",
+  },
+  {
+    name: "Lars Veggeland",
+    email: "lordsimzim@gmail.com",
+    description:
+      "Lars is a short man who likes to sing High School Musical songs while biking.",
+    image:
+      "/scr/4c03742f-c5e7-4af6-b4be-925b83b2ccd91C6CA15B-FE26-4780-BFCE-95602779EC35.jpeg",
+  },
+  {
+    name: "Lars Grødal",
+    email: "larsegil45@gmail.com",
+    description:
+      "15 years old Gamer, Streamer and a friend. My favourite food is Lasagna. I got a dog named Jølle. Lol, hope i get in im Lars and im proud of being a Lars",
+    image:
+      "/scr/37e28429-9840-491c-9d2e-82f7dfe3e467118992345_952448198587546_6221118249215144894_n.jpg",
+  },
+  {
+    name: "Lars Ramsli Søyland",
+    email: "lordsimzim@gmail.com",
+    description: "Lars has ADHD and likes to dance in funerals",
+    image:
+      "/scr/ead474f5-261c-4399-8920-ccbd1f14cd95351B0AAB-A0B1-42EA-8FD2-C9C2565D9FF3.jpeg",
+  },
+  {
+    name: "Lars Aurland",
+    email: "lars@aur.land",
+    description:
+      "Graphic Designer, working with several interesting projects for corporate, startups, and local businesses.",
+    linkedin: "https://www.linkedin.com/in/lars-aurland-9b93b21a1/",
+    image: "/scr/76f0ce22-a6b0-4d5c-9d33-7a1ae22275baportrett.jpg",
+  },
+  {
+    name: "Lars Nysæther",
+    email: "larsnyser@gmail.com",
+    description:
+      "Lars is in high school. He is studying electronics and wants be a electrician.",
+    image:
+      "/scr/93dc5841-cdf7-4139-9a96-075aacc34b511602332864582364910933116412023.jpg",
+  },
+  {
+    name: "Lars Løvold",
+    email: "larslovold@hotmail.com",
+    description: "Politician, love sports and climbing",
+    image:
+      "/scr/f1dece19-7160-4b32-9292-527e8cf94a1e2B0B9578-3EAA-4C39-86A2-8C3DEE9BEED4.jpeg",
+  },
+  {
+    name: "Lars Riple",
+    email: "lars.riple@gmail.com",
+    description:
+      "Competed in the 2005 NM in Grandiosa-eating. Did not win. Didn´t even come close.",
+    image:
+      "/scr/01d21115-bf17-4216-885f-24daaeab09a7Bilde tatt 10.10.20 kl. 13.42.jpg",
   },
 ];
