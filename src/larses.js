@@ -397,20 +397,6 @@ export default [
       "/scr/d0294f06-000a-4b74-97c4-04e130a91d7460A6CBD2-DB7D-4D84-98E9-DD642D2A1C0B.jpeg",
   },
   {
-    name: "Taco Lars",
-    email: "lars@gmail.com",
-    description: "Best på Taco.",
-    image:
-      "/scr/770192d8-326a-4379-baec-9e37322d233f8C9B90B6-C4A8-473D-8022-D00602FC7945.png",
-  },
-  {
-    name: "Larris lars",
-    email: "thommasolai@gmail.com",
-    description: "He lives in norway and loves to have fun in the wods",
-    image:
-      "/scr/1219f5c0-d30f-4c8f-ad90-e3013a4ec10dD42CE9C6-A851-464C-B68D-4391DEC2437A.png",
-  },
-  {
     name: "Lars Martinius Skogheim Endrerud",
     email: "liv.swang@gmail.com",
     description:
