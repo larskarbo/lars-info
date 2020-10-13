@@ -80,6 +80,10 @@ function App() {
         <div>
           <button
             onClick={() => {
+              const yes = window.confirm("In order to reduce spam, and keep quality of Larses high, I added a paywall of 2.50$ to add a new Lars.\n\nDo you want to continue to payment?")
+              if(yes){
+                window.location.href = "https://gum.co/AFmKs"
+              }
               setShowForm(true);
             }}
             style={{ marginTop: 20 }}
@@ -87,7 +91,10 @@ function App() {
             Submit new Lars +
           </button>
         </div>
-        {showForm && (
+        {showForm && 
+          <a href="https://gum.co/AFmKs">>> Payment {"<<"}</a>
+        }
+        {/* {showForm && (
           <NetlifyForm name="newlars">
             {({ loading, error, success }) => (
               <div>
@@ -150,7 +157,7 @@ function App() {
               </div>
             )}
           </NetlifyForm>
-        )}
+        )} */}
 
         <div className="larses">
           {larses.map((lars) => (
