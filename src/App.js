@@ -153,15 +153,7 @@ function App() {
         )}
 
         <div className="larses">
-          {larses.filter(lars => !lars.bad).map((lars) => (
-            <Lars lars={lars} />
-          ))}
-        </div>
-        <div className="larses" style={{
-          paddingTop:250
-        }}>
-          Bad larses: (need better bios/pictures)
-          {larses.filter(lars => lars.bad).map((lars) => (
+          {larses.map((lars) => (
             <Lars lars={lars} />
           ))}
         </div>
