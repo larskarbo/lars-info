@@ -597,15 +597,15 @@ export default [
       "Fortnite gamer and a kind friend, add my snapchat @LarsEven02",
     image: "/gen/c467c94b-b5d0-4ded-b4cd-7709afc96dacLarsList.PNG",
   },
-  {
-    name: "Marcus Jenshaug",
-    email: "marcus@jenshaug.no",
-    description:
-      "Hello, im not a Lars but im an Lars species expert. I expertice in Lars'es way of communicating and their ways of acting in society.",
-    instagram: "https://www.instagram.com/marcus.jenshaug/",
-    image:
-      "/gen/9c742db6-3f27-4a96-a6df-7f691b649d5ae78fe9beb6f6e6213741c08d4eba0f0b9f5c5884_full.jpg",
-  },
+  // {
+  //   name: "Marcus Jenshaug",
+  //   email: "marcus@jenshaug.no",
+  //   description:
+  //     "Hello, im not a Lars but im an Lars species expert. I expertice in Lars'es way of communicating and their ways of acting in society.",
+  //   instagram: "https://www.instagram.com/marcus.jenshaug/",
+  //   image:
+  //     "/gen/9c742db6-3f27-4a96-a6df-7f691b649d5ae78fe9beb6f6e6213741c08d4eba0f0b9f5c5884_full.jpg",
+  // },
   {
     name: "Lars wilhelmsson",
     email: "larzinho@hormail.com",
