@@ -35,6 +35,7 @@ export default [
   },
   {
     name: "Lars Morstad",
+    email: "larsthalianmorstad@gmail.com",
     description:
       "Studying Informatics at the University of Edinburgh and a paragon of all things nerdy! Organizing Hack the Burgh 2021!",
     image: "/gen/morstad.png",
@@ -42,22 +43,25 @@ export default [
   },
   {
     name: "Lars Werne",
+    email: "L.P.J.Werne@sms.ed.ac.uk",
     description:
       "Probably the biggest Pure Maths enthusiast who ever decided to study Informatics instead. In Germany we say “1 Ehrenmann”.",
     github: "https://github.com/larswe",
     image: "/gen/werne.jpg",
   },
-  // {
-  //   name: "Lars Sandal",
-  //   description: "This norwegian Lars is a 17 year old currently in high school. Doesn't have a more interesting bio yet. Let's give him some years.",
-  //   image: "/gen/sandal.jpeg",
-  // },
+  {
+    name: "Lars Sandal",
+    description: "This norwegian Lars is a 17 year old currently in high school. Doesn't have a more interesting bio yet. Let's give him some years.",
+    image: "/gen/sandal.jpeg",
+    email: "lars.benjamin.sandal@gmail.com"
+  },
   {
     name: "Lars Even Beite",
     description:
       "This norwegian Lars is a full time Twitch streamer. That's pretty cool.",
     twitch: "https://www.twitch.tv/kapitanostv",
     image: "/gen/beite.png",
+    email: "mrgrindvik@icloud.com",
   },
   {
     name: "Lars Dankertsen",
@@ -81,18 +85,21 @@ export default [
 
   {
     name: "Lars Erik Møgster",
+    email: "larserikmgster@gmail.com",
     description:
       "This norwegian Lars is a student of University of Bergen and studies nordic languages. He is also a Great Smash Ultimate player.",
     image: "/gen/mogster.jpg",
   },
   {
     name: "Lars Mathias Madland",
+    email: "nikkomij1711@gmail.com",
     description:
       "A blonde boy from South-West Norway. He likes football and is good at it. He is a Lars.",
     image: "/gen/madland.png",
   },
   {
     name: "Lars Meidell",
+    email: "toreaarsand@hotmail.com",
     description:
       "This Lars is an Instagram influencer. His best friend is Tore.",
     instagram: "https://www.instagram.com/larsmeidell/",
@@ -104,9 +111,11 @@ export default [
       "Also called: 'LÆRI'. Studying veterenary medicine in Oslo. Born and raised in Frex (Fredrikstad) .ILLE GLAD I BACON!",
     instagram: "https://www.instagram.com/lars.hana/",
     image: "/gen/hana.png",
+    email: "esandaa@gmail.com",
   },
   {
     name: "Lars Antman",
+    email: "larskalas912@gmail.com",
     description:
       "This Lars is studying Hotel and Tourism in Nyköping Sweden, (yes he's still in school :c). He indeed has very nice sweaters, hit him up on instagram if you want style advice (Lasseboi0). Of course as the zoomer he is, he found out about Larslist through TikTok.",
     instagram: "https://www.instagram.com/lasseboi0/",
@@ -117,9 +126,11 @@ export default [
     description:
       "This Lars is studying to be a car mechanic and a part time gamer.",
     image: "/gen/skalnes.jpg",
+    email: "magnewill1@hotmail.com",
   },
   {
     name: "Lars Asbjørn Sandnes",
+    email: "lars_sandnes@live.no",
     description:
       "Film student with a love for beer, retro video games & Nicolas Cage. Likes Halloween more than any other holliday.",
     website: "https://letterboxd.com/Yeetyeet/",
@@ -127,6 +138,7 @@ export default [
   },
   {
     name: "Lars Albrigtsen",
+    email: "lefdallars@gmail.com",
     description:
       "Also known as 'Kabbelars'. 19 years old and lives in the west coast of Norway.",
     image: "/gen/albrigtsen.png",
@@ -1130,4 +1142,11 @@ export default [
     image:
       "/gen/2f669901-145d-43a7-bb90-a411f364a19523227114_1998646823743017_204273266_n.jpg",
   },
+  {
+    name: "Lars Mijatovic",
+    email: "larsmathiasmadland@hotmail.com",
+    description: "This is Lars Mijatovic. Not really good at anything. He’s just vibing and has a fresh haircut. A very happy Lars. He’s just living life!",
+    image: "/gen/B2A79D6B-CE52-47FF-B6B6-62E951A6C62A.jpeg",
+    recent: true
+  }
 ];

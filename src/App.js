@@ -17,6 +17,7 @@ import larses from "./larses";
 
 function App() {
   const [showForm, setShowForm] = useState(false);
+  console.log(JSON.stringify(larses))
   return (
     <div className="Outer">
       <div className="App">
@@ -158,9 +159,15 @@ function App() {
             )}
           </NetlifyForm>
         )} */}
-
+        <div className="title">Recent additions 🔥:</div>
         <div className="larses">
-          {larses.map((lars) => (
+          {larses.filter(lars=>lars.recent).map((lars) => (
+            <Lars lars={lars} />
+            ))}
+        </div>
+        <div className="title">All Larses:</div>
+        <div className="larses">
+          {larses.filter(lars=>!lars.recent).map((lars) => (
             <Lars lars={lars} />
           ))}
         </div>
