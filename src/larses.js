@@ -761,13 +761,6 @@ export default [
       "/gen/bc5465ef-25fb-446b-a41b-2d7b42c1255d125E3F00-DCF0-4F54-8507-8553218C497D.png",
   },
   {
-    name: "Lars Knap Gaustad",
-    email: "Lars@gmail.com",
-    description:
-      "Lars er allmektig\\r\\nLars er stor\\r\\nEr du imot denne tro\\r\\nSå er du ikke en Bror",
-    image: "/gen/7c776911-e2fc-4ec8-9f60-8684c574426flarsy.PNG",
-  },
-  {
     name: "Lars Johansen",
     email: "lars@gmail.com",
     description: "I do nothing, drunk",
@@ -1147,6 +1140,23 @@ export default [
     email: "larsmathiasmadland@hotmail.com",
     description: "This is Lars Mijatovic. Not really good at anything. He’s just vibing and has a fresh haircut. A very happy Lars. He’s just living life!",
     image: "/gen/B2A79D6B-CE52-47FF-B6B6-62E951A6C62A.jpeg",
+    recent: true
+  },
+  {
+    name: "Lars Trøen",
+    email: "larstr@tihlde.org",
+    description: "Consultant @ Atea, VMUG Leader, coder,speaker,rocker, 12x vExpert, vExpertPRO, vmktree, vmfaq, core-four, watchingpaintdryminutebyminute.com, RageAgainstTheVM",
+    image: "/gen/troen.jpg",
+    twitter: "https://twitter.com/larstr",
+    instagram: "https://www.instagram.com/1arstr/",
+    youtube: "https://www.youtube.com/user/1arstr",
+    recent: true
+  },
+  {
+    name: "Lars Ivar Flage",
+    email: "larsivar.flage@outlook.com",
+    description: "I'm a boxer born in 04 and currently studying to become a maritime electrician at Alta Videregående. I love Pepsi Max and motorcycles. What can I say,  i like to drive my bike, fish, go boxing and lift heavyweights 🥊💪 Love country music and tractors 🤠",
+    image: "/gen/flage.png",
     recent: true
   }
 ];

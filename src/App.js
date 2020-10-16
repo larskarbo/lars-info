@@ -6,6 +6,8 @@ import {
   TiSocialTwitterCircular,
   TiSocialInstagramCircular,
   TiSocialTwitter,
+  TiSocialYoutubeCircular,
+  TiSocialFacebookCircular,
   TiSocialInstagram,
   TiLink,
   TiSocialGithubCircular,
@@ -221,6 +223,21 @@ const Lars = ({ lars }) => (
       {lars.github && (
         <Link href={lars.github}>
           <TiSocialGithubCircular />
+        </Link>
+      )}
+      {lars.instagram && (
+        <Link href={lars.github}>
+          <TiSocialInstagramCircular />
+        </Link>
+      )}
+      {lars.facebook && (
+        <Link href={lars.github}>
+          <TiSocialFacebookCircular />
+        </Link>
+      )}
+      {lars.youtube && (
+        <Link href={lars.github}>
+          <TiSocialYoutubeCircular />
         </Link>
       )}
     </div>
