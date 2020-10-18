@@ -1150,6 +1150,7 @@ export default [
     twitter: "https://twitter.com/larstr",
     instagram: "https://www.instagram.com/1arstr/",
     youtube: "https://www.youtube.com/user/1arstr",
+    website: "http://watchingpaintdryminutebyminute.com/",
     recent: true
   },
   {
@@ -1157,6 +1158,14 @@ export default [
     email: "larsivar.flage@outlook.com",
     description: "I'm a boxer born in 04 and currently studying to become a maritime electrician at Alta Videregående. I love Pepsi Max and motorcycles. What can I say,  i like to drive my bike, fish, go boxing and lift heavyweights 🥊💪 Love country music and tractors 🤠",
     image: "/gen/flage.png",
+    recent: true
+  },
+  {
+    name: "Lars Christian Skattebo",
+    email: "itzleoplays@gmail.com",
+    description: "Livet er kort om du ikke har gullkort. Chakatt på snap.",
+    image: "/gen/skattebo.png",
+    instagram: "https://instagram.com/chskatt",
     recent: true
   }
 ];
