@@ -1163,7 +1163,7 @@ export default [
   {
     name: "Lars Christian Skattebo",
     email: "verzeth@gmail.com",
-    description: "Livet er kort om du ikke har gullkort. Chakatt på snap.",
+    description: "Livet er kort om du ikke har gullkort.",
     image: "/gen/skattebo.png",
     instagram: "https://instagram.com/chskatt",
     recent: true
