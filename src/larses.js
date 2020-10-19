@@ -1162,10 +1162,24 @@ export default [
   },
   {
     name: "Lars Christian Skattebo",
-    email: "itzleoplays@gmail.com",
+    email: "verzeth@gmail.com",
     description: "Livet er kort om du ikke har gullkort. Chakatt på snap.",
     image: "/gen/skattebo.png",
     instagram: "https://instagram.com/chskatt",
+    recent: true
+  },
+  {
+    name: "Lars Grønfjell",
+    email: "alfred.ronnestad@hotmail.com",
+    description: "Lars er født 11. juli 1998 er for øyeblikket bosatt i Mo i Rana i Nordland. Han er kjæresten til Synne. Lars er en aktiv speider på fritiden, selv om han ikke har så mye tid til å praktisere denne fritidsaktiviteten like mye som han ønsker lenger på grunn av arbeid og vilje. I 2019 var Lars vognfører i Telekompaniet i sambandsbataljonen på Beltevogn 206. Dette var nok egentlig drømmejobben til Lars, men han har valgt å gå tilbake til sitt gamle yrke som tømrer og murer. I 2016 var Lars arrangementsleder for roverball i Mo i Rana. Hele familien hans er enig om at dette var nok hans stolteste øyeblikk. Lars ser for seg å flytte sørover i nærmeste fremtid. Det er fordi han har en drøm om å bli søring. Dette sammen med kjæresten sin som han i flere år har valgt å holde hemmelig for å verne om privatlivet sitt.",
+    image: "/gen/asdfasdf.png",
+    recent: true
+  },
+  {
+    name: "Lars Eirik Gallefoss",
+    email: "alfred.ronnestad@hotmail.com",
+    description: "I am tough",
+     image: "/gen/galle.png",
     recent: true
   }
 ];

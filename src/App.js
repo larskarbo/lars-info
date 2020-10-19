@@ -241,7 +241,9 @@ const Lars = ({ lars }) => (
         </Link>
       )}
     </div>
-    <div>{lars.description}</div>
+    <div style={{
+      fontSize: lars.description.length > 300 && 8
+    }}>{lars.description}</div>
   </div>
 
 )
