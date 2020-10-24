@@ -1177,9 +1177,17 @@ export default [
   },
   {
     name: "Lars Eirik Gallefoss",
-    email: "alfred.ronnestad@hotmail.com",
+    email: "larsgallefossll@gmail.com",
     description: "I am tough",
-     image: "/gen/galle.png",
+    image: "/gen/galle.png",
     recent: true
-  }
+  },
+  {
+    name: "Lars Stray",
+    email: "stray.lars5@gmail.com",
+    description: "Just another Lars. Trying to be the best Lars as he can. I have something in common with another Lars. Me and Lars Ulrich both play in a band. I dont play in Metallica, but still...",
+    image: "/gen/stray.png",
+    recent: true
+  },
+
 ];
