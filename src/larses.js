@@ -51,9 +51,10 @@ export default [
   },
   {
     name: "Lars Sandal",
-    description: "This norwegian Lars is a 17 year old currently in high school. Doesn't have a more interesting bio yet. Let's give him some years.",
+    description:
+      "This norwegian Lars is a 17 year old currently in high school. Doesn't have a more interesting bio yet. Let's give him some years.",
     image: "/gen/sandal.jpeg",
-    email: "lars.benjamin.sandal@gmail.com"
+    email: "lars.benjamin.sandal@gmail.com",
   },
   {
     name: "Lars Even Beite",
@@ -429,8 +430,7 @@ export default [
     name: "Lars Tran",
     email: "mathiaschristensen38@gmail.com",
     description: "This is a Danish Lars, he likes to sleep.",
-    image:
-      "/gen/CleanShotasdf.png",
+    image: "/gen/CleanShotasdf.png",
   },
   {
     name: "Lars Arne Lesund",
@@ -548,8 +548,7 @@ export default [
     email: "lars.riple@gmail.com",
     description:
       "Competed in the 2005 NM in Grandiosa-eating. Did not win. Didn´t even come close.",
-    image:
-      "/gen/01d21115-bf17-4216-885f-.jpg",
+    image: "/gen/01d21115-bf17-4216-885f-.jpg",
   },
 
   {
@@ -813,8 +812,7 @@ export default [
     description:
       "full time alcoholic, I'm still a child but I have big potential",
     instagram: "https://www.instagram.com/larslitlabo",
-    image:
-      "/gen/c3a6df84-6513-4b6c-bfd4-123d4630b385.png",
+    image: "/gen/c3a6df84-6513-4b6c-bfd4-123d4630b385.png",
   },
   {
     name: "Lars Trygve Lønning",
@@ -1138,27 +1136,30 @@ export default [
   {
     name: "Lars Mijatovic",
     email: "larsmathiasmadland@hotmail.com",
-    description: "This is Lars Mijatovic. Not really good at anything. He’s just vibing and has a fresh haircut. A very happy Lars. He’s just living life!",
+    description:
+      "This is Lars Mijatovic. Not really good at anything. He’s just vibing and has a fresh haircut. A very happy Lars. He’s just living life!",
     image: "/gen/B2A79D6B-CE52-47FF-B6B6-62E951A6C62A.jpeg",
-    recent: true
+    recent: true,
   },
   {
     name: "Lars Trøen",
     email: "larstr@tihlde.org",
-    description: "Consultant @ Atea, VMUG Leader, coder,speaker,rocker, 12x vExpert, vExpertPRO, vmktree, vmfaq, core-four, watchingpaintdryminutebyminute.com, RageAgainstTheVM",
+    description:
+      "Consultant @ Atea, VMUG Leader, coder,speaker,rocker, 12x vExpert, vExpertPRO, vmktree, vmfaq, core-four, watchingpaintdryminutebyminute.com, RageAgainstTheVM",
     image: "/gen/troen.jpg",
     twitter: "https://twitter.com/larstr",
     instagram: "https://www.instagram.com/1arstr/",
     youtube: "https://www.youtube.com/user/1arstr",
     website: "http://watchingpaintdryminutebyminute.com/",
-    recent: true
+    recent: true,
   },
   {
     name: "Lars Ivar Flage",
     email: "larsivar.flage@outlook.com",
-    description: "I'm a boxer born in 04 and currently studying to become a maritime electrician at Alta Videregående. I love Pepsi Max and motorcycles. What can I say,  i like to drive my bike, fish, go boxing and lift heavyweights 🥊💪 Love country music and tractors 🤠",
+    description:
+      "I'm a boxer born in 04 and currently studying to become a maritime electrician at Alta Videregående. I love Pepsi Max and motorcycles. What can I say,  i like to drive my bike, fish, go boxing and lift heavyweights 🥊💪 Love country music and tractors 🤠",
     image: "/gen/flage.png",
-    recent: true
+    recent: true,
   },
   {
     name: "Lars Christian Skattebo",
@@ -1166,28 +1167,37 @@ export default [
     description: "Livet er kort om du ikke har gullkort.",
     image: "/gen/skattebo.png",
     instagram: "https://instagram.com/chskatt",
-    recent: true
+    recent: true,
   },
   {
     name: "Lars Grønfjell",
     email: "alfred.ronnestad@hotmail.com",
-    description: "Lars er født 11. juli 1998 er for øyeblikket bosatt i Mo i Rana i Nordland. Han er kjæresten til Synne. Lars er en aktiv speider på fritiden, selv om han ikke har så mye tid til å praktisere denne fritidsaktiviteten like mye som han ønsker lenger på grunn av arbeid og vilje. I 2019 var Lars vognfører i Telekompaniet i sambandsbataljonen på Beltevogn 206. Dette var nok egentlig drømmejobben til Lars, men han har valgt å gå tilbake til sitt gamle yrke som tømrer og murer. I 2016 var Lars arrangementsleder for roverball i Mo i Rana. Hele familien hans er enig om at dette var nok hans stolteste øyeblikk. Lars ser for seg å flytte sørover i nærmeste fremtid. Det er fordi han har en drøm om å bli søring. Dette sammen med kjæresten sin som han i flere år har valgt å holde hemmelig for å verne om privatlivet sitt.",
+    description:
+      "Lars er født 11. juli 1998 er for øyeblikket bosatt i Mo i Rana i Nordland. Han er kjæresten til Synne. Lars er en aktiv speider på fritiden, selv om han ikke har så mye tid til å praktisere denne fritidsaktiviteten like mye som han ønsker lenger på grunn av arbeid og vilje. I 2019 var Lars vognfører i Telekompaniet i sambandsbataljonen på Beltevogn 206. Dette var nok egentlig drømmejobben til Lars, men han har valgt å gå tilbake til sitt gamle yrke som tømrer og murer. I 2016 var Lars arrangementsleder for roverball i Mo i Rana. Hele familien hans er enig om at dette var nok hans stolteste øyeblikk. Lars ser for seg å flytte sørover i nærmeste fremtid. Det er fordi han har en drøm om å bli søring. Dette sammen med kjæresten sin som han i flere år har valgt å holde hemmelig for å verne om privatlivet sitt.",
     image: "/gen/asdfasdf.png",
-    recent: true
+    recent: true,
   },
   {
     name: "Lars Eirik Gallefoss",
     email: "larsgallefossll@gmail.com",
     description: "I am tough",
     image: "/gen/galle.png",
-    recent: true
+    recent: true,
   },
   {
     name: "Lars Stray",
     email: "stray.lars5@gmail.com",
-    description: "Just another Lars. Trying to be the best Lars as he can. I have something in common with another Lars. Me and Lars Ulrich both play in a band. I dont play in Metallica, but still...",
+    description:
+      "Just another Lars. Trying to be the best Lars as he can. I have something in common with another Lars. Me and Lars Ulrich both play in a band. I dont play in Metallica, but still...",
     image: "/gen/stray.png",
-    recent: true
+    recent: true,
   },
-
+  {
+    name: "Lars Jørgen Skattebo",
+    email: "lars@ljskatt.no",
+    description: "JEG VIL HA TO IS !",
+    github: "https://github.com/ljskatt",
+    image: "/gen/83d5c993-1416-48d5-97ff-455681c0c7f5.jpg",
+    recent: true,
+  },
 ];
