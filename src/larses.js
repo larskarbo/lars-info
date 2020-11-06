@@ -1216,4 +1216,11 @@ export default [
     image: "/gen/Broekhuijsen.jpg",
     recent: true,
   },
+  {
+    name: "Lars August",
+    email: "rubixproe@gmail.com",
+    description: "This is the most larsy Lars out there, while being a Lars he is also a frog whisperer, he can talk and understand frogs like no one else. On top of all this he is also a traktor Lars.",
+    image: "/gen/august.png",
+    recent: true,
+  },
 ];
