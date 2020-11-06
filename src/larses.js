@@ -1139,7 +1139,7 @@ export default [
     description:
       "This is Lars Mijatovic. Not really good at anything. He’s just vibing and has a fresh haircut. A very happy Lars. He’s just living life!",
     image: "/gen/B2A79D6B-CE52-47FF-B6B6-62E951A6C62A.jpeg",
-    recent: true,
+    recent: false,
   },
   {
     name: "Lars Trøen",
@@ -1151,7 +1151,7 @@ export default [
     instagram: "https://www.instagram.com/1arstr/",
     youtube: "https://www.youtube.com/user/1arstr",
     website: "http://watchingpaintdryminutebyminute.com/",
-    recent: true,
+    recent: false,
   },
   {
     name: "Lars Ivar Flage",
@@ -1159,7 +1159,7 @@ export default [
     description:
       "I'm a boxer born in 04 and currently studying to become a maritime electrician at Alta Videregående. I love Pepsi Max and motorcycles. What can I say,  i like to drive my bike, fish, go boxing and lift heavyweights 🥊💪 Love country music and tractors 🤠",
     image: "/gen/flage.png",
-    recent: true,
+    recent: false,
   },
   {
     name: "Lars Christian Skattebo",
@@ -1167,7 +1167,7 @@ export default [
     description: "Livet er kort om du ikke har gullkort.",
     image: "/gen/skattebo.png",
     instagram: "https://instagram.com/chskatt",
-    recent: true,
+    recent: false,
   },
   {
     name: "Lars Grønfjell",
@@ -1175,14 +1175,14 @@ export default [
     description:
       "Lars er født 11. juli 1998 er for øyeblikket bosatt i Mo i Rana i Nordland. Han er kjæresten til Synne. Lars er en aktiv speider på fritiden, selv om han ikke har så mye tid til å praktisere denne fritidsaktiviteten like mye som han ønsker lenger på grunn av arbeid og vilje. I 2019 var Lars vognfører i Telekompaniet i sambandsbataljonen på Beltevogn 206. Dette var nok egentlig drømmejobben til Lars, men han har valgt å gå tilbake til sitt gamle yrke som tømrer og murer. I 2016 var Lars arrangementsleder for roverball i Mo i Rana. Hele familien hans er enig om at dette var nok hans stolteste øyeblikk. Lars ser for seg å flytte sørover i nærmeste fremtid. Det er fordi han har en drøm om å bli søring. Dette sammen med kjæresten sin som han i flere år har valgt å holde hemmelig for å verne om privatlivet sitt.",
     image: "/gen/asdfasdf.png",
-    recent: true,
+    recent: false,
   },
   {
     name: "Lars Eirik Gallefoss",
     email: "larsgallefossll@gmail.com",
     description: "I am tough",
     image: "/gen/galle.png",
-    recent: true,
+    recent: false,
   },
   {
     name: "Lars Stray",
@@ -1190,7 +1190,7 @@ export default [
     description:
       "Just another Lars. Trying to be the best Lars as he can. I have something in common with another Lars. Me and Lars Ulrich both play in a band. I dont play in Metallica, but still...",
     image: "/gen/stray.png",
-    recent: true,
+    recent: false,
   },
   {
     name: "Lars Jørgen Skattebo",
@@ -1198,6 +1198,22 @@ export default [
     description: "JEG VIL HA TO IS !",
     github: "https://github.com/ljskatt",
     image: "/gen/83d5c993-1416-48d5-97ff-455681c0c7f5.jpg",
+    recent: false,
+  },
+  {
+    name: "Lars Grydeland Rye",
+    email: "larsr2001@gmail.com",
+    description: "The most norwegian Lars you’ll find on this page. I love my country, alcohol and making snow angels. ",
+    github: "https://instagram.com/larsgrye",
+    image: "/gen/rye.png",
+    recent: true,
+  },
+  {
+    name: "Lars van Broekhuijsen",
+    email: "ltvb1902@gmail.com",
+    description: "Hey, I am dutch Lars. I study Earth Science, like hiking with my dog, am incredibly dislexic and can't stand the sound of people chewing. This is by far the best site I ever visited and can't wait to see how big it will grow. Have a nice day. (SO to my girls in Norway) ",
+    github: "https://instagram.com/larsvanbroekhuijsen",
+    image: "/gen/Broekhuijsen.jpg",
     recent: true,
   },
 ];
