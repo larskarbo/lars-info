@@ -1223,4 +1223,12 @@ export default [
     image: "/gen/august.png",
     recent: true,
   },
+  {
+    name: "Lars Erik Eide",
+    email: "hognemarvik@gmail.com",
+    description: "This Lars is a norwegian highschooler, he is currently 18. He loves hamburgers, and he dreams of becoming a professional twitch streamer/gamer. ",
+    image: "/gen/asdfasdfasdfasdff.png",
+    youtube: "https://www.youtube.com/user/leide0022",
+    recent: true,
+  },
 ];
