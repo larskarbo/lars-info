@@ -1231,4 +1231,11 @@ export default [
     youtube: "https://www.youtube.com/user/leide0022",
     recent: true,
   },
+  {
+    name: "Lars Østerhus",
+    email: "sneakydog06@gmail.com",
+    description: "This guy is the smartest Lars in the world with only good grades. If you have bad friends or anything, this guy wont help.",
+    image: "/gen/asdfij.jpg",
+    recent: true,
+  },
 ];
