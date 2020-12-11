@@ -1238,4 +1238,11 @@ export default [
     image: "/gen/asdfij.jpg",
     recent: true,
   },
+  {
+    name: "Lars Henrik Rosten Gabrielsen",
+    email: "laheroga@gmail.com",
+    description: "This is Lars. He is the best lars that I know of. Crazy good with the guitar and is generally a really good guy",
+    image: "/gen/fdisojfdosidjf.jpg.jpg",
+    recent: true,
+  },
 ];
