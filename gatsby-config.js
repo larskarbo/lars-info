@@ -14,13 +14,13 @@ module.exports = {
     //     path: `${__dirname}/src/content`,
     //   },
     // },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `scr`),
-      },
-    },
+    // {
+    //   // resolve: `gatsby-source-filesystem`,
+    //   // options: {
+    //   //   name: `images`,
+    //   //   path: path.join(__dirname, `scr`),
+    //   // },
+    // },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-airtable`,
