@@ -21,7 +21,6 @@ import GatsbyImage from "gatsby-image";
 
 function App({ data }) {
   const larses = data.allAirtable.edges.map(({ node }) => node.data);
-  console.log("🚀 ~ larses", larses);
   const [showForm, setShowForm] = useState(false);
   return (
     <div className="">
@@ -213,7 +212,6 @@ function App({ data }) {
 }
 
 const Lars = ({ lars }) => {
-console.log("🚀 ~ lars", lars.name, lars.img.localFiles[0].childImageSharp)
 
   
   return (

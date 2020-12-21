@@ -33,7 +33,7 @@ module.exports = {
             baseId: `appugmBtHoY7HdY6e`,
             tableName: `larses`,
             mapping: { img: `fileNode` },
-            // tableView: `YOUR_TABLE_VIEW_NAME` // optional
+            tableView: `Grid view` // optional
             // can leave off queryName, mapping or tableLinks if not needed
           }
         ]
