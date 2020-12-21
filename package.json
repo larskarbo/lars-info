@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "airtable": "^0.10.1",
     "autoprefixer": "^10.1.0",
     "csv-reader": "^1.0.7",
@@ -23,7 +20,7 @@
     "gatsby-source-filesystem": "^2.8.0",
     "gatsby-transformer-sharp": "^2.9.0",
     "postcss": "^8.2.1",
-    "react": "^16.13.1",
+    "react": "^17.0.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
