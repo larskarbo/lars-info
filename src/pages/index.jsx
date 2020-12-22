@@ -19,9 +19,19 @@ import { graphql } from "gatsby";
 import GatsbyImage from "gatsby-image";
 // const larses = []
 
+function datediff(first, second) {
+  // Take the difference between the dates and divide by milliseconds per day.
+  // Round to nearest whole number to deal with DST.
+  return Math.round((second - first) / (1000 * 60 * 60 * 24));
+}
+
 function App({ data }) {
-  const larses = data.allAirtable.edges.map(({ node }) => node.data).sort((a, b) => a.ID - b.ID);
+  const larses = data.allAirtable.edges.map(({ node }) => node.data).sort((a, b) => b.ID - a.ID);
   const [showForm, setShowForm] = useState(false);
+
+  let recents = larses.filter(lars =>
+    datediff(new Date(lars.Created), new Date()) < 2
+  )
   return (
     <div className="">
       <Helmet>
@@ -190,22 +200,29 @@ function App({ data }) {
             )}
           </NetlifyForm>
         )} */}
-        <div className="title w-full text-3xl my-14 text-center font-bold">- Recent additions 🔥 -</div>
-        <div className="larses flex flex-row flex-wrap justify-center">
-          {larses
+        {recents.length &&
+          <>
+            <div className="title w-full text-3xl my-14 text-center font-bold">- Recent additions 🔥 -</div>
+            <div className="larses flex flex-row flex-wrap justify-center">
+              {recents
 
-            .slice(-5)
-            .sort((a, b) => b.ID - a.ID)
-            .map((lars) => (
-              <Lars lars={lars} />
-            ))}
-        </div>
+                // .filter((lars) => )
+                .sort((a, b) => b.ID - a.ID)
+                .map((lars) => (
+                  <Lars lars={lars} />
+                ))}
+            </div>
+          </>
+        }
         <div className="title w-full text-3xl my-14 text-center font-bold">All Larses:</div>
         <div className="larses flex flex-row flex-wrap justify-center">
           {larses
 
-            .slice(0, larses.length - 5)
-            .filter((lars) => !lars.recent)
+            // .filter((lars) => !recents.some(l => l.ID == lars.ID))
+            .sort((a, b) => {
+              return a.name.includes("Lars Karbø") ? -1 : 1
+            })
+            .filter((lars) => !recents.some(l => l.ID == lars.ID))
             .map((lars) => (
               <Lars lars={lars} />
             ))}
@@ -215,10 +232,10 @@ function App({ data }) {
   );
 }
 
-const parseLink = (base, str)=>{
-  if(str.includes("https")){
+const parseLink = (base, str) => {
+  if (str.includes("https")) {
     return str
-  } else if(str.includes("@")){
+  } else if (str.includes("@")) {
     return base + str.replace("@", "")
   } else {
     return base + str
@@ -239,6 +256,13 @@ const Lars = ({ lars }) => {
         >
           {lars.name}
         </div>
+        {lars.name == "Lars Karbø" &&
+          <span className={"p-1 px-2 rounded-xl uppercase font-bold  text-xs text-red-400 bg-red-100"} style={{
+            fontSize: 10
+          }}>
+            CREATOR OF LARSLIST
+      </span>
+        }
         <div className="flex">
           {lars.linkedin && (
             <Link href={lars.linkedin}>
@@ -282,6 +306,7 @@ const Lars = ({ lars }) => {
             </Link>
           )}
         </div>
+
       </div>
       <div
         style={{
@@ -355,6 +380,7 @@ export const query = graphql`
             facebook
             ID
             youtube
+            Created
             img {
               localFiles {
                 childImageSharp{
