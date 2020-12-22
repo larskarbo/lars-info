@@ -20,7 +20,7 @@ import GatsbyImage from "gatsby-image";
 // const larses = []
 
 function App({ data }) {
-  const larses = data.allAirtable.edges.map(({ node }) => node.data);
+  const larses = data.allAirtable.edges.map(({ node }) => node.data).sort((a, b) => a.ID - b.ID);
   const [showForm, setShowForm] = useState(false);
   return (
     <div className="">
@@ -193,7 +193,9 @@ function App({ data }) {
         <div className="title w-full text-3xl my-14 text-center font-bold">- Recent additions 🔥 -</div>
         <div className="larses flex flex-row flex-wrap justify-center">
           {larses
-            .filter((lars) => lars.recent)
+
+            .slice(-5)
+            .sort((a, b) => b.ID - a.ID)
             .map((lars) => (
               <Lars lars={lars} />
             ))}
@@ -201,6 +203,8 @@ function App({ data }) {
         <div className="title w-full text-3xl my-14 text-center font-bold">All Larses:</div>
         <div className="larses flex flex-row flex-wrap justify-center">
           {larses
+
+            .slice(0, larses.length - 5)
             .filter((lars) => !lars.recent)
             .map((lars) => (
               <Lars lars={lars} />
@@ -211,74 +215,85 @@ function App({ data }) {
   );
 }
 
+const parseLink = (base, str)=>{
+  if(str.includes("https")){
+    return str
+  } else if(str.includes("@")){
+    return base + str.replace("@", "")
+  } else {
+    return base + str
+  }
+}
+
 const Lars = ({ lars }) => {
 
-  
+
   return (
-  <div className="w-36 mx-6 mb-6">
-      <GatsbyImage  className="rounded" fixed={lars.img.localFiles[0].childImageSharp?.fixed} alt="" />
-    <div
-    className=" pt-2 pb-3"
-    >
+    <div className="w-36 mx-6 mb-6">
+      <GatsbyImage className="rounded" fixed={lars.img.localFiles[0].childImageSharp?.fixed} alt="" />
       <div
-      className="text-sm font-bold"
+        className=" pt-2 pb-3"
       >
-        {lars.name}
+        <div
+          className="text-sm font-bold"
+        >
+          {lars.name}
+        </div>
+        <div className="flex">
+          {lars.linkedin && (
+            <Link href={lars.linkedin}>
+              <TiSocialLinkedinCircular />
+            </Link>
+          )}
+          {lars.twitter && (
+            <Link href={lars.twitter}>
+              <TiSocialTwitterCircular />
+            </Link>
+          )}
+          {lars.website && (
+            <Link href={lars.website}>
+              <TiLink />
+            </Link>
+          )}
+
+          {lars.twitch && (
+            <Link href={lars.twitch}>
+              <SiTwitch />
+            </Link>
+          )}
+          {lars.github && (
+            <Link href={lars.github}>
+              <TiSocialGithubCircular />
+            </Link>
+          )}
+          {lars.instagram && (
+            <Link href={parseLink("https://www.instagram.com/", lars.instagram)}>
+              <TiSocialInstagramCircular />
+            </Link>
+          )}
+          {lars.facebook && (
+            <Link href={lars.facebook}>
+              <TiSocialFacebookCircular />
+            </Link>
+          )}
+          {lars.youtube && (
+            <Link href={lars.youtube}>
+              <TiSocialYoutubeCircular />
+            </Link>
+          )}
+        </div>
       </div>
-      <div className="flex">
-        {lars.linkedin && (
-          <Link href={lars.linkedin}>
-            <TiSocialLinkedinCircular />
-          </Link>
-        )}
-        {lars.twitter && (
-          <Link href={lars.twitter}>
-            <TiSocialTwitterCircular />
-          </Link>
-        )}
-        {lars.website && (
-          <Link href={lars.website}>
-            <TiLink />
-          </Link>
-        )}
-  
-        {lars.twitch && (
-          <Link href={lars.website}>
-            <SiTwitch />
-          </Link>
-        )}
-        {lars.github && (
-          <Link href={lars.github}>
-            <TiSocialGithubCircular />
-          </Link>
-        )}
-        {lars.instagram && (
-          <Link href={lars.github}>
-            <TiSocialInstagramCircular />
-          </Link>
-        )}
-        {lars.facebook && (
-          <Link href={lars.github}>
-            <TiSocialFacebookCircular />
-          </Link>
-        )}
-        {lars.youtube && (
-          <Link href={lars.github}>
-            <TiSocialYoutubeCircular />
-          </Link>
-        )}
+      <div
+        style={{
+          fontSize: lars.description.length > 300 && 8,
+        }}
+        className="text-xs"
+      >
+        {lars.description}
       </div>
     </div>
-    <div
-      style={{
-        fontSize: lars.description.length > 300 && 8,
-      }}
-      className="text-xs"
-    >
-      {lars.description}
-    </div>
-  </div>
-)};
+  )
+};
 
 const Link = ({ href, children }) => {
   return (
@@ -300,7 +315,7 @@ const LinkSide = ({ href, children, icon }) => {
     <div>
       <a
         href={href}
-        
+
         className="flex text-lg flex-row items-center"
       >
         <span
@@ -338,8 +353,8 @@ export const query = graphql`
             email
             github
             facebook
+            ID
             youtube
-            recent
             img {
               localFiles {
                 childImageSharp{
