@@ -122,7 +122,7 @@ function App({ data }) {
           <button
             onClick={() => {
               const yes = window.confirm(
-                "In order to reduce spam, and keep quality of Larses high, I added a paywall of 2.50$ to add a new Lars.\n\nDo you want to continue to payment?"
+                "In order to reduce spam, and keep quality of Larses high, I added a paywall of 5$ to add a new Lars.\n\nDo you want to continue to payment?"
               );
               if (yes) {
                 window.location.href = "https://gum.co/AFmKs";
